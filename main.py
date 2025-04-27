@@ -34,7 +34,7 @@ FAQ = {
     }
 }
 
-ADMIN_ID = 7048073193  # Замените на ваш Telegram user ID
+ADMIN_ID = 1234567  # Замените на ваш Telegram user ID
 
 def init_db():
     conn = sqlite3.connect("messages.db")
@@ -168,7 +168,7 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     init_db()
-    app = Application.builder().token("8109824187:AAGrAjqoeFpkJyXSlva8u5-HVH0qZTmmtZk").build()
+    app = Application.builder().token("Token_Bot").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
